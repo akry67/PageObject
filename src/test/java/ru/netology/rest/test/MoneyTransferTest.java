@@ -74,26 +74,6 @@ class MoneyTransferTest {
         var actualBackBalanceFirstCard = dashboardPage.getCardBalance(secondCardInfo);
         var actualBackBalanceSecondCard = dashboardPage.getCardBalance(firstCardInfo);
     }
-
-/*    @Test
-    void shouldTransferFromFirstToSecondToo() {
-        Configuration.holdBrowserOpen = true;
-        var loginPage = new LoginPageV1();
-        var authInfo = DataHelper.getAuthInfo();
-        var verificationPage = loginPage.validLogin(authInfo);
-        var verificationCode = DataHelper.getVerificationCodeFor(authInfo);
-        var dashboardPage = verificationPage.validVerify(verificationCode);
-        var firstCardInfo = getFirstCard();
-        var secondCardInfo = getSecondCard();
-        int amount = 1000;
-        var expectedBalanceFirstCard = dashboardPage.getCardBalance(firstCardInfo) - amount;
-        var expectedBalanceSecondCard = dashboardPage.getCardBalance(secondCardInfo) + amount;
-        var transferPage = dashboardPage.selectCardToTransfer(secondCardInfo);
-        dashboardPage = transferPage.transferOperation(parseInt(String.valueOf(amount)), firstCardInfo);
-        var actualBalanceFirstCard = dashboardPage.getCardBalance(firstCardInfo);
-        var actualBalanceSecondCard = dashboardPage.getCardBalance(secondCardInfo);
-        assertEquals(expectedBalanceFirstCard, actualBalanceFirstCard);
-        assertEquals(expectedBalanceSecondCard, actualBalanceSecondCard);
-    }*/
+    
 }
 
